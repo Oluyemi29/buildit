@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "BuildItLab",
     description:
       "BuilditLab is a software development studio helping startups and companies build modern digital products. From MVPs to full-scale applications, we bring your ideas to life with clean design, efficient development, and reliable execution",
-    url: "https://buildit.vercel.app",
+    url: "https://buildit-virid-phi.vercel.app",
     siteName: "BuildItLab",
     images: {
       url: "/buildit-preview.PNG",
