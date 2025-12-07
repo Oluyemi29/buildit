@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@heroui/react";
+import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Project = () => {
@@ -16,7 +17,11 @@ const Project = () => {
           Designing scalable digital ecosystems that power revenue, efficiency,
           and customer
         </h1>
-        <Button className="text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC]">
+        <Button
+          as={Link}
+          href="/contact"
+          className="text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] transition-all duration-500 ease-in-out hover:scale-105"
+        >
           Start a project <FaArrowRightLong className="text-end text-white" />
         </Button>
       </div>

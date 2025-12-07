@@ -1,20 +1,52 @@
 "use client";
 import { HiLightBulb } from "react-icons/hi";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const Expertise = () => {
+  const ref = useRef(null);
+  const controls = useAnimation();
+  
+  // detect in view, no "once"
+  const inView = useInView(ref, { margin: "-100px 0px" }); // optional margin
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [inView, controls]);
+
+  // Parent variant (optional)
+  const parentVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.5, // stagger delay between children
+      },
+    },
+  };
+
+  // Child variant
+  const childVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+
   return (
-    <div className="w-full">
-      <div className="w-full bg-[#F2F5F7] overflow-x-hidden p-2 md:p-5   flex flex-col justify-center items-start gap-7 py-10">
-        <h1 className="text-[1.1rem] font-semibold text-[#000000]">
+    <div className="w-full bg-linear-to-br from-indigo-100 via-white to-purple-100">
+      <div className="w-full bg-transparent overflow-x-hidden px-2 md:px-5  flex flex-col justify-center items-start md:items-center gap-7 py-16">
+        <h1 className="text-[1.1rem] md:text-2xl font-semibold text-[#000000]">
           Leverage End-to-End Product Expertise
         </h1>
-        <p className="text-[0.8rem] text-[#000000] font-semibold">
+        <p className="text-[0.8rem] md:text-[0.9rem] text-[#000000] w-full md:w-2/3 md:text-center">
           From validating your idea to scaling a live product, we help startups
           move faster. Whether you need expert consultation, extra hands on your
           team, or a full product build, we’re your partner from concept to
           launch.
         </p>
-        <div className="w-full flex overflow-x-auto py-5">
+        <div className="w-full flex overflow-x-auto no-scrollbar py-5">
           <div className="flex flex-row gap-5">
             {/* ideation  */}
             <div className="flex flex-row items-center md:w-80 w-80 gap-4">
@@ -109,50 +141,69 @@ const Expertise = () => {
           </div>
         </div>
       </div>
-      <div className="p-2 md:p-5 mt-5 w-full flex flex-col md:items-center items-start">
-        <h1 className="text-[1.1rem]  font-semibold text-[#000000]">
+
+      <div className="p-2 md:p-5 mt-6 w-full flex flex-col gap-10 md:gap-6 md:items-center items-start">
+        <h1 className="text-[1.1rem] md:text-2xl  font-semibold text-[#000000]">
           See real impact, not just progress
         </h1>
-        <p className="text-sm text-[#000000]">
+        <p className="text-sm md:text-[1rem] text-[#000000] w-full md:w-2/3 md:text-center">
           Our process is built for speed, clarity, and measurable outcomes. We
           help startups move from concept to launch fast without cutting corners
           on quality or creativity.
         </p>
       </div>
-      <div className="w-full overflow-x-auto flex">
-        <div className="flex flex-row gap-5 md:p-5 p-2">
-          <div className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60">
+      <div className="w-full mt-5 overflow-x-auto no-scrollbar flex">
+        <motion.div
+          variants={parentVariants}
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          className="flex flex-row gap-5 md:p-5 p-2 space-y-4"
+        >
+          <motion.div
+            variants={childVariants}
+            className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60"
+          >
             {/* 40 %  */}
             <p className="text-4xl text-[#000000] font-semibold">40%</p>
-            <p className="text-sm font-semibold">
+            <p className="text-sm md:font-medium font-semibold">
               growth in international & GCC orders for a global retailer
             </p>
-          </div>
+          </motion.div>
 
           {/* 50 %  */}
-          <div className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60">
+          <motion.div
+            variants={childVariants}
+            className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60"
+          >
             <p className="text-4xl text-[#000000] font-semibold">5.0</p>
-            <p className="text-sm font-semibold">
+            <p className="text-sm md:font-medium font-semibold">
               app rating on App Store for a major sports ecommerce platform
             </p>
-          </div>
+          </motion.div>
 
           {/* 60 %  */}
-          <div className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60">
+          <motion.div
+            variants={childVariants}
+            className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60"
+          >
             <p className="text-4xl text-[#000000] font-semibold">60%</p>
-            <p className="text-sm font-semibold">
+            <p className="text-sm md:font-medium font-semibold">
               more user engagement with hyper personalization for a US proptech
             </p>
-          </div>
+          </motion.div>
 
           {/* 21 %  */}
-          <div className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60">
+          <motion.div
+            variants={childVariants}
+            className="bg-[#F2F5F7] rounded-md md:p-10 p-5 flex flex-col gap-10 md:w-72 md:h-48 h-44 w-60"
+          >
             <p className="text-4xl text-[#000000] font-semibold">21%</p>
-            <p className="text-sm font-semibold">
+            <p className="text-sm md:font-medium font-semibold">
               higher conversation for a top global marketplace
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

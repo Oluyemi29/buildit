@@ -3,23 +3,32 @@
 import { Image } from "@heroui/react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-
 const CaseStudies = () => {
   return (
-    <div className="w-full flex flex-col gap-5 my-5 px-2">
-      <h1 className="text-[#000000] text-lg font-semibold md:text-center text-start">
-        Building smarter ecosystems for startups in B2B, and retail for the next
-        digital era
-      </h1>
-      <div className="overflow-x-auto flex py-4">
-        <div className="flex flex-row gap-5">
+    <div className="w-full flex flex-col gap-5 my-10 px-2">
+      <div className="w-full flex flex-col md:items-center gap-10">
+        <h1 className="text-[#000000] text-lg md:text-2xl font-semibold md:text-center text-start">
+          Building smarter ecosystems for startups in B2B, and retail for the
+          next digital era
+        </h1>
+        <p className="text-sm text-[#000000] md:text-lg w-2/3 text-center md:flex hidden">
+          We build smarter digital ecosystems designed to empower startups
+          across B2B and retail sectors. Our solutions connect workflows,
+          streamline operations, and improve the way businesses interact with
+          their customers.
+        </p>
+      </div>
+      <div className="overflow-x-auto no-scrollbar flex py-4">
+        <div className="flex flex-row md:grid md:grid-cols-2 md:gap-20 gap-5">
           {/* game  */}
-          <div className="md:w-80 w-60 flex flex-col gap-5">
+          <div className="md:w-full w-60 flex flex-col gap-5">
             <Image
-              src={"/game.png"}
+              src={
+                "https://images.unsplash.com/photo-1567943346767-72780dd14cd5"
+              }
               width={"100%"}
               alt="Game"
-              className="w-full relative md:h-60 h-48 rounded-md"
+              className="w-full relative md:h-120 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
             />
             <div className="w-full flex flex-row justify-between items-center">
               <Image
@@ -31,7 +40,7 @@ const CaseStudies = () => {
               <h1 className="text-[#000000] font-bold text-[0.8rem]">UI/UX</h1>
             </div>
             <div className="flex flex-col gap-5 mt-3">
-              <h1 className="text-[#000000] text-sm font-semibold">
+              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
                 21% higher conversion for a top marketplace
               </h1>
               <p className="text-[#6D6D6D] text-[0.8rem]">
@@ -42,12 +51,14 @@ const CaseStudies = () => {
           </div>
 
           {/* sketck  */}
-          <div className="md:w-80 w-60 flex flex-col gap-5">
+          <div className="md:w-full w-60 md:mt-28 flex flex-col gap-5">
             <Image
-              src={"/sketch.png"}
+              src={
+                "https://plus.unsplash.com/premium_photo-1701085496588-8f294c8cd063"
+              }
               width={"100%"}
               alt="Game"
-              className="w-full md:h-60 h-48 rounded-md"
+              className="w-full md:h-120 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
             />
             <div className="w-full flex flex-row justify-between items-center">
               <Image
@@ -59,7 +70,7 @@ const CaseStudies = () => {
               <h1 className="text-[#000000] font-bold text-[0.8rem]">UI/UX</h1>
             </div>
             <div className="flex flex-col gap-5 mt-5">
-              <h1 className="text-[#000000] text-sm font-semibold">
+              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
                 System architecture for autonomous stores by Zabka
               </h1>
               <p className="text-[#6D6D6D] text-[0.8rem]">
@@ -70,12 +81,14 @@ const CaseStudies = () => {
           </div>
 
           {/* game  */}
-          <div className="md:w-80 w-60 flex flex-col gap-5">
+          <div className="md:w-full w-60 flex flex-col gap-5">
             <Image
-              src={"/game.png"}
+              src={
+                "https://images.unsplash.com/photo-1567943346767-72780dd14cd5"
+              }
               width={"100%"}
               alt="Game"
-              className="w-full relative md:h-60 h-48 rounded-md"
+              className="w-full relative md:h-120 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
             />
             <div className="w-full flex flex-row justify-between items-center">
               <Image
@@ -87,7 +100,7 @@ const CaseStudies = () => {
               <h1 className="text-[#000000] font-bold text-[0.8rem]">UI/UX</h1>
             </div>
             <div className="flex flex-col gap-5 mt-3">
-              <h1 className="text-[#000000] text-sm font-semibold">
+              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
                 21% higher conversion for a top marketplace
               </h1>
               <p className="text-[#6D6D6D] text-[0.8rem]">
@@ -98,12 +111,14 @@ const CaseStudies = () => {
           </div>
 
           {/* sketck  */}
-          <div className="md:w-80 w-60 flex flex-col gap-5">
+          <div className="md:w-full w-60 flex md:mt-28 flex-col gap-5">
             <Image
-              src={"/sketch.png"}
+              src={
+                "https://plus.unsplash.com/premium_photo-1701085496588-8f294c8cd063"
+              }
               width={"100%"}
               alt="Game"
-              className="w-full md:h-60 h-48 rounded-md"
+              className="w-full md:h-120 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
             />
             <div className="w-full flex flex-row justify-between items-center">
               <Image
@@ -115,7 +130,7 @@ const CaseStudies = () => {
               <h1 className="text-[#000000] font-bold text-[0.8rem]">UI/UX</h1>
             </div>
             <div className="flex flex-col gap-5 mt-5">
-              <h1 className="text-[#000000] text-sm font-semibold">
+              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
                 System architecture for autonomous stores by Zabka
               </h1>
               <p className="text-[#6D6D6D] text-[0.8rem]">
@@ -126,13 +141,15 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-start items-center gap-2">
-        <p className="font-bold text-sm text-[#000000] underline underline-offset-2">
+      <div className="flex flex-row justify-start md:justify-center items-center gap-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer">
+        <p className="font-bold md:font-medium text-sm text-[#000000] underline underline-offset-2">
           More case studies
         </p>
         <FaArrowRightLong className="mr-4" />
         <div>
-          <p className="text-[0.7rem] font-semibold px-4 py-1 w-max h-max rounded-full bg-[#FF8D28]">Coming soon</p>
+          <p className="text-[0.7rem] font-semibold px-4 py-1 w-max h-max rounded-full bg-[#FF8D28]">
+            Coming soon
+          </p>
         </div>
       </div>
     </div>
