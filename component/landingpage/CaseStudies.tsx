@@ -19,7 +19,7 @@ const CaseStudies = () => {
         </p>
       </div>
       <div className="overflow-x-auto no-scrollbar flex py-4">
-        <div className="flex flex-row md:grid md:grid-cols-2 md:gap-20 gap-5">
+        <div className="flex flex-row mx-auto md:grid md:grid-cols-2 md:gap-20 gap-5">
           {/* game  */}
           <div className="md:w-full w-60 flex flex-col gap-5">
             <Image
@@ -43,7 +43,7 @@ const CaseStudies = () => {
               <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
                 21% higher conversion for a top marketplace
               </h1>
-              <p className="text-[#6D6D6D] text-[0.8rem]">
+              <p className="text-[#6D6D6D] text-[0.8rem] md:text-[0.9rem]">
                 Augmenting a highly demanding team with product design experts
                 for rapid, tangible results
               </p>
@@ -73,67 +73,7 @@ const CaseStudies = () => {
               <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
                 System architecture for autonomous stores by Zabka
               </h1>
-              <p className="text-[#6D6D6D] text-[0.8rem]">
-                Planning, designing, implementing, and maintaining autonomous
-                stores architecture for a major chain
-              </p>
-            </div>
-          </div>
-
-          {/* game  */}
-          <div className="md:w-full w-60 flex flex-col gap-5">
-            <Image
-              src={
-                "https://images.unsplash.com/photo-1567943346767-72780dd14cd5"
-              }
-              width={"100%"}
-              alt="Game"
-              className="w-full relative md:h-120 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
-            />
-            <div className="w-full flex flex-row justify-between items-center">
-              <Image
-                src={"/sportano_logo.png"}
-                alt="Sportano"
-                height={"50%"}
-                width={"100%"}
-              />
-              <h1 className="text-[#000000] font-bold text-[0.8rem]">UI/UX</h1>
-            </div>
-            <div className="flex flex-col gap-5 mt-3">
-              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
-                21% higher conversion for a top marketplace
-              </h1>
-              <p className="text-[#6D6D6D] text-[0.8rem]">
-                Augmenting a highly demanding team with product design experts
-                for rapid, tangible results
-              </p>
-            </div>
-          </div>
-
-          {/* sketck  */}
-          <div className="md:w-full w-60 flex md:mt-28 flex-col gap-5">
-            <Image
-              src={
-                "https://plus.unsplash.com/premium_photo-1701085496588-8f294c8cd063"
-              }
-              width={"100%"}
-              alt="Game"
-              className="w-full md:h-120 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
-            />
-            <div className="w-full flex flex-row justify-between items-center">
-              <Image
-                src={"/zabka.png"}
-                alt="Sportano"
-                width={"100%"}
-                height={"50%"}
-              />
-              <h1 className="text-[#000000] font-bold text-[0.8rem]">UI/UX</h1>
-            </div>
-            <div className="flex flex-col gap-5 mt-5">
-              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
-                System architecture for autonomous stores by Zabka
-              </h1>
-              <p className="text-[#6D6D6D] text-[0.8rem]">
+              <p className="text-[#6D6D6D] text-[0.8rem] md:text-[0.9rem]">
                 Planning, designing, implementing, and maintaining autonomous
                 stores architecture for a major chain
               </p>

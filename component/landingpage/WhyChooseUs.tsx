@@ -109,19 +109,21 @@ const WhyChooseUs = () => {
             ref={ref}
             initial="hidden"
             animate={controls}
-            className="flex flex-row gap-5"
+            className="flex flex-row gap-5 mx-auto"
           >
             {detail.map((eachDetail, index) => {
               return (
                 <motion.div
                   variants={childVariants}
                   key={index}
-                  className="bg-[#F2F5F7] rounded-md md:p-7 p-5 flex flex-col gap-7 md:w-72 w-60 h-32"
+                  className="bg-[#F2F5F7] rounded-3xl md:p-7 p-5 flex flex-col gap-7 md:w-72 w-60 h-32 shadow-black/20 shadow-lg"
                 >
                   <h1 className="font-bold text-xl">
                     {CountItem(eachDetail.number, inView)}+
                   </h1>
-                  <p className="text-sm font-semibold">{eachDetail.text}</p>
+                  <p className="text-sm md:text-[1rem] font-semibold">
+                    {eachDetail.text}
+                  </p>
                 </motion.div>
               );
             })}

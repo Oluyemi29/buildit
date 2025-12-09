@@ -24,20 +24,44 @@ const ContactForm = () => {
     resolver: zodResolver(formSchema),
   });
 
-  const submit = (value: formSChemaType) => {
+  const submit = async (value: formSChemaType) => {
     setLoading(true);
     try {
       const { email, firstname, lastname, message, phone } = value;
       console.log(email, firstname, lastname, message, phone);
-      addToast({
-        color: "success",
-        title: "Success",
-        description: "Your details has been submitted successfully",
-        timeout: 5000,
+
+      const request = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, firstname, lastname, message, phone }),
       });
-      reset();
+      const response = await request.json();
+      if (response.success) {
+        addToast({
+          color: "success",
+          title: "Success",
+          description: response.message,
+          timeout: 5000,
+        });
+        return reset();
+      } else {
+        addToast({
+          color: "danger",
+          title: "Error",
+          description: response.message,
+          timeout: 5000,
+        });
+      }
     } catch (error) {
       console.log(error);
+      addToast({
+        color: "danger",
+        title: "Error",
+        description: "An error occured",
+        timeout: 5000,
+      });
     } finally {
       setLoading(false);
     }

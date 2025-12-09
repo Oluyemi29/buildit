@@ -1,6 +1,6 @@
 "use client";
 
-import { Image } from "@heroui/react";
+import { Card, Image } from "@heroui/react";
 
 const Testimonial = () => {
   return (
@@ -15,9 +15,9 @@ const Testimonial = () => {
         </p>
       </div>
       <div className="w-full flex no-scrollbar overflow-x-auto">
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row mx-auto gap-5">
           {/* Testimonial  */}
-          <div className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
+          <Card className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
             <div className="flex flex-row gap-4 items-center">
               <Image
                 src={"/testy1.jpg"}
@@ -40,9 +40,9 @@ const Testimonial = () => {
             <div className="w-full flex flex-row justify-end">
               <Image src={"/zabka.png"} alt="Zabka" className="w-10 h-4" />
             </div>
-          </div>
+          </Card>
 
-          <div className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
+          <Card className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
             <div className="flex flex-row gap-4 items-center">
               <Image
                 src={"/testy2.jpg"}
@@ -69,9 +69,9 @@ const Testimonial = () => {
                 className="w-20 h-4"
               />
             </div>
-          </div>
+          </Card>
 
-          <div className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
+          {/* <Card className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
             <div className="flex flex-row gap-4 items-center">
               <Image
                 src={"/testy1.jpg"}
@@ -94,9 +94,9 @@ const Testimonial = () => {
             <div className="w-full flex flex-row justify-end">
               <Image src={"/zabka.png"} alt="Zabka" className="w-10 h-4" />
             </div>
-          </div>
+          </Card> */}
 
-          <div className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
+          {/* <Card className="flex flex-col gap-5 bg-[#FFFFFF] md:w-80 w-72 p-5 transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 hover:translate-y-2">
             <div className="flex flex-row gap-4 items-center">
               <Image
                 src={"/testy2.jpg"}
@@ -123,7 +123,7 @@ const Testimonial = () => {
                 className="w-20 h-4"
               />
             </div>
-          </div>
+          </Card> */}
         </div>
       </div>
     </div>

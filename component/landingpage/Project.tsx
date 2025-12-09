@@ -13,7 +13,7 @@ const Project = () => {
       }}
     >
       <div className="w-full flex flex-col justify-center items-center gap-20">
-        <h1 className="text-[#F2F5F7] font-bold text-xl text-center">
+        <h1 className="text-[#F2F5F7] font-bold text-xl text-center hover:opacity-70 transition-all duration-500 ease-in-out hover:scale-105">
           Designing scalable digital ecosystems that power revenue, efficiency,
           and customer
         </h1>

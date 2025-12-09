@@ -31,7 +31,7 @@ const Industries = () => {
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           Integrated design-to-delivery product development
         </h1>
-        <p className="text-[0.8rem] md:text-[0.9rem] text-[#000000] md:text-center bg-">
+        <p className="text-[0.8rem] md:text-[0.9rem] text-[#000000] md:leading-7 leading-6 md:text-center bg-">
           At BuilditLab, we understand that every industry operates differently.
           That’s why we combine deep technical expertise with domain
           understanding to build solutions that fit your business perfectly,
@@ -39,7 +39,7 @@ const Industries = () => {
           beyond.
         </p>
       </div>
-      <div className="w-full grid lg:grid-cols-3 md:p-5 my-14 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="w-full grid lg:grid-cols-3 md:p-5 my-14 md:grid-cols-2 grid-cols-1 gap-20 justify-start items-start">
         {/* finance  */}
         <motion.div
           variants={animateds}
@@ -51,7 +51,7 @@ const Industries = () => {
             <BsBank className="text-[#000000] " />
           </div>
           <p className="text-lg font-semibold text-[#000000]">Fintech</p>
-          <p className="text-[0.8rem] md:text-[0.9rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center md:leading-7 leading-6 text-[#000000]">
             We build user-friendly financial applications with strong security
             standards, seamless transactions, and beautiful interfaces.
           </p>
@@ -76,7 +76,7 @@ const Industries = () => {
           <p className="text-lg font-semibold text-[#000000]">
             E-Commerce & Retail
           </p>
-          <p className="text-[0.8rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center text-[#000000] md:leading-7 leading-6">
             Whether you’re building a startup marketplace or scaling an online
             store, we create smooth, conversion-driven experiences for your
             customers.
@@ -102,7 +102,7 @@ const Industries = () => {
           <p className="text-lg font-semibold text-[#000000]">
             EdTech (Education Technology)
           </p>
-          <p className="text-[0.8rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center md:leading-7 leading-6 text-[#000000]">
             Learning experiences designed for engagement and simplicity.We
             develop modern learning platforms that enhance teaching,
             collaboration, and course delivery.
@@ -128,7 +128,7 @@ const Industries = () => {
           <p className="text-lg font-semibold text-[#000000]">
             Logistics & Transportation
           </p>
-          <p className="text-[0.8rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center md:leading-7 leading-6 text-[#000000]">
             Learning experiences designed for engagement and simplicity.We
             develop modern learning platforms that enhance teaching,
             collaboration, and course delivery.
@@ -154,7 +154,7 @@ const Industries = () => {
           <p className="text-lg font-semibold text-[#000000]">
             Hospitality & Travel
           </p>
-          <p className="text-[0.8rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center md:leading-7 leading-6 text-[#000000]">
             Create delightful digital experiences for guests and travelers. We
             transform booking, management, and experience delivery for hotels,
             restaurants, and travel agencies.
@@ -180,7 +180,7 @@ const Industries = () => {
           <p className="text-lg font-semibold text-[#000000]">
             Startups (General Emerging Markets)
           </p>
-          <p className="text-[0.8rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center md:leading-7 leading-6 text-[#000000]">
             Perfect for early-stage teams building from zero to one. We help
             startups validate ideas, build MVPs, and scale quickly without heavy
             overhead.
@@ -204,7 +204,7 @@ const Industries = () => {
             <FaNotesMedical className="text-[#000000] " />
           </div>
           <p className="text-lg font-semibold text-[#000000]">Health Tech</p>
-          <p className="text-[0.8rem] text-center text-[#000000]">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-center md:leading-7 leading-6 text-[#000000]">
             Secure and reliable solutions for medical and wellness services.We
             help healthcare brands go digital with smooth, user-centric tools
             built with data privacy in mind.

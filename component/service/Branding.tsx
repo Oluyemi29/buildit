@@ -1,6 +1,6 @@
 "use client";
 
-import { Image } from "@heroui/react";
+import { Card, Image } from "@heroui/react";
 import { Variants } from "framer-motion";
 import { LuDot } from "react-icons/lu";
 import { motion } from "framer-motion";
@@ -26,15 +26,16 @@ const Branding = () => {
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           5. Branding & Digital Identity
         </h1>
-        <p className="text-[#000000] text-[0.8rem] font-medium md:text-[0.9rem] md:text-center w-full text-start">
+        <p className="text-[#000000] text-[0.8rem] font-medium md:text-[0.9rem] md:text-center w-full md:w-2/3 text-start">
           We help early-stage tech companies create a strong digital identity
           that stands out. Your brand is more than a logo, it’s the perception,
           tone, and emotion your product conveys.
         </p>
       </div>
       <div className="w-full  bg-transparent flex md:mt-0 my-5 overflow-x-auto">
-        <div className="flex flex-row gap-3 md:w-full md:justify-center mx-auto w-auto">
-          <div className="bg-[#F2F5F7] md:w-full w-72 h-max rounded-lg p-5">
+        <div className="flex flex-row md:gap-16 gap-3 md:w-2/3 md:justify-center mx-auto w-auto">
+          <Card className="bg-[#F2F5F7]/70 md:w-full w-72 h-max relative p-5">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.25),transparent_70%)]" />
             <div className="bg-[#FFFFFF] w-12 h-12 rounded-full md:hidden flex flex-col justify-center items-center">
               <Image
                 src={"/vector.png"}
@@ -79,9 +80,10 @@ const Branding = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Card>
 
-          <div className="bg-[#F2F5F7] md:w-full md:h-72 h-84 md:mt-0 mt-14 w-72 rounded-lg p-5">
+          <Card className="bg-[#F2F5F7]/70 md:w-full md:h-72 h-84 md:mt-0 mt-14 w-72 relative p-5">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.25),transparent_70%)]" />
             <div className="bg-[#FFFFFF] w-12 h-12 rounded-full md:hidden flex flex-col justify-center items-center">
               <Image
                 src={"/vector2.png"}
@@ -95,18 +97,16 @@ const Branding = () => {
                 What You Get:
               </p>
               <div className="flex flex-row gap-2 justify-start items-center">
-                <p className="text-[#000000] text-[0.7rem] font-medium md:text-[0.9rem] w-full md:w-[85%]">
+                <p className="text-[#000000] text-[0.7rem] font-medium md:text-[0.9rem] w-full md:w-full md:leading-8">
                   A cohesive and memorable brand identity that clearly
                   communicates who you are and what you stand for. Designed to
                   look modern, professional, and instantly recognizable across
                   all touchpoints. It helps your audience build confidence in
-                  your product from the very first interaction. Every visual and
-                  messaging element is crafted to position your startup as
-                  premium and trustworthy.
+                  your product from the very first interaction.
                 </p>
               </div>
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </motion.div>

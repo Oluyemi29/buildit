@@ -13,7 +13,7 @@ const HeroSession = () => {
           We Build Digital Products That Move Startups Forward
         </h1>
         <div className="w-[90%] md:w-[70%] flex flex-col gap-6">
-          <p className="text-[#E3D8D8] md:text-[1rem] md:text-center font-medium text-[0.8rem]">
+          <p className="text-[#E3D8D8] md:text-xl md:text-center md:font-semibold font-medium text-[0.8rem]">
             We help build powerful digital solutions, fast, smooth, and
             strategically.
           </p>

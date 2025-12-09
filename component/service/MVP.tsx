@@ -1,6 +1,6 @@
 "use client";
 
-import { Image } from "@heroui/react";
+import { Card, Image } from "@heroui/react";
 import { Variants } from "framer-motion";
 import { LuDot } from "react-icons/lu";
 import { motion } from "framer-motion";
@@ -26,15 +26,16 @@ const MVP = () => {
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           3. MVP Development for Startups
         </h1>
-        <p className="text-[#000000] text-[0.8rem] font-medium md:text-[0.9rem] md:text-center w-full text-start">
+        <p className="text-[#000000] text-[0.8rem] font-medium md:text-[0.9rem] md:text-center w-full md:w-2/3 text-start">
           Perfect for founders who need to validate ideas quickly, secure
           funding, or launch fast. We help you transform your concept into a
           functional Minimum Viable Product in weeks, not months.
         </p>
       </div>
-      <div className="w-full  bg-transparent flex md:mt-0 my-5 overflow-x-auto">
-        <div className="flex flex-row gap-3 md:w-full md:justify-center mx-auto w-auto">
-          <div className="bg-[#F2F5F7] md:w-full w-72 h-max rounded-lg p-5">
+      <div className="w-full bg-transparent flex md:mt-0 my-5 overflow-x-auto">
+        <div className="flex flex-row md:gap-16 gap-3 md:w-2/3 md:justify-center mx-auto w-auto">
+          <Card className="bg-[#F2F5F7]/70 md:w-full w-72 h-max relative p-5">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.25),transparent_70%)]" />
             <div className="bg-[#FFFFFF] w-12 h-12 rounded-full md:hidden flex flex-col justify-center items-center">
               <Image
                 src={"/vector.png"}
@@ -79,9 +80,10 @@ const MVP = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Card>
 
-          <div className="bg-[#F2F5F7] md:w-full md:h-72 h-84 md:mt-0 mt-14 w-72 rounded-lg p-5">
+          <Card className="bg-[#F2F5F7]/70 md:w-full md:h-72 h-84 md:mt-0 mt-14 w-72 relative p-5">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.25),transparent_70%)]" />
             <div className="bg-[#FFFFFF] w-12 h-12 rounded-full md:hidden flex flex-col justify-center items-center">
               <Image
                 src={"/vector2.png"}
@@ -95,18 +97,16 @@ const MVP = () => {
                 Outcome:
               </p>
               <div className="flex flex-row gap-2 justify-start items-center">
-                <p className="text-[#000000] text-[0.7rem] font-medium md:text-[0.9rem] w-full md:w-[85%]">
+                <p className="text-[#000000] text-[0.7rem] font-medium md:text-[0.9rem] w-full md:w-full md:leading-8">
                   A fully functional and user-ready version of your product,
                   built to demonstrate real value from day one. It allows teams,
                   customers, and stakeholders to test core features in a
                   real-world environment. The prototype provides enough
-                  functionality for meaningful feedback and early validation. It
-                  also serves as a powerful tool for pitching to investors and
-                  showcasing your product vision clearly.
+                  functionality for meaningful feedback and early validation.
                 </p>
               </div>
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </motion.div>

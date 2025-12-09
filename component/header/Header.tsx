@@ -9,6 +9,7 @@ import {
   Link,
   Image,
   Button,
+  Tooltip,
 } from "@heroui/react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -104,20 +105,34 @@ const Header = () => {
             </Link>
           </NavbarItem>
           <NavbarItem isActive={true}>
-            <Link
-              className="text-[#000000] font-inter font-medium text-[0.85rem] hover:scale-105 transition-all duration-300 ease-in-out hover:font-semibold hover:text-[#021645]"
-              href="#"
+            <Tooltip
+              content="Coming Soon"
+              color="warning"
+              placement="bottom-end"
+              size="sm"
             >
-              Case Studies
-            </Link>
+              <Link
+                className="text-[#000000] font-inter font-medium text-[0.85rem] hover:scale-105 transition-all duration-300 ease-in-out hover:font-semibold hover:text-[#021645]"
+                href="#"
+              >
+                Case Studies
+              </Link>
+            </Tooltip>
           </NavbarItem>
           <NavbarItem isActive={pathName === ""}>
-            <Link
-              className="text-[#000000] font-inter font-medium text-[0.85rem] hover:scale-105 transition-all duration-300 ease-in-out hover:font-semibold hover:text-[#021645]"
-              href="#"
+            <Tooltip
+              content="Coming Soon"
+              color="warning"
+              placement="bottom-end"
+              size="sm"
             >
-              Insights
-            </Link>
+              <Link
+                className="text-[#000000] font-inter font-medium text-[0.85rem] hover:scale-105 transition-all duration-300 ease-in-out hover:font-semibold hover:text-[#021645]"
+                href="#"
+              >
+                Insights
+              </Link>
+            </Tooltip>
           </NavbarItem>
           <NavbarItem isActive={pathName === "/about"}>
             <Link
@@ -137,7 +152,11 @@ const Header = () => {
 
         <NavbarContent justify="end" className="md:flex hidden">
           <NavbarItem>
-            <Button as={Link} href="/contact" className="text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] hover:scale-105 transition-all duration-500 ease-in-out">
+            <Button
+              as={Link}
+              href="/contact"
+              className="text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] hover:scale-105 transition-all duration-500 ease-in-out"
+            >
               Start a project
               <FaArrowRightLong className="text-end text-white" />
             </Button>
@@ -188,7 +207,11 @@ const Header = () => {
             </NavbarMenuItem>
           ))}
           <div className="w-full mt-auto flex flex-row justify-center items-center">
-            <Button as={Link} href="/contact" className=" text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] w-4/6">
+            <Button
+              as={Link}
+              href="/contact"
+              className=" text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] w-4/6"
+            >
               Start a project
               <FaArrowRightLong className="text-end text-white" />
             </Button>

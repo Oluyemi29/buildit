@@ -1,4 +1,4 @@
-"use client";
+
 
 import CalltoAction from "@/component/industries/CalltoAction";
 import Testimonial from "@/component/landingpage/Testimonial";
@@ -11,6 +11,11 @@ import Product from "@/component/service/Product";
 import ProductDesign from "@/component/service/ProductDesign";
 import WebApp from "@/component/service/WebApp";
 import YourStartup from "@/component/service/YourStartup";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+};
 
 const page = () => {
   return (

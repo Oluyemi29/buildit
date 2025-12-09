@@ -27,7 +27,7 @@ const OurMission = () => {
         <p className="font-semibold text-xl md:text-2xl md:text-center md:self-center self-end">
           Our Mission
         </p>
-        <p className="text-sm md:text-[0.9rem] font-medium md:text-center text-start w-full md:w-2/3">
+        <p className="text-sm md:text-[0.9rem] font-medium md:text-center text-start w-full md:w-2/3 leading-6">
           To help startups and businesses bring their ideas to life through
           high-quality software development, user-centered design, and practical
           product strategy.
@@ -43,10 +43,8 @@ const OurMission = () => {
         <p className="font-semibold text-xl md:text-2xl md:text-center md:self-center self-start">
           Our Vision
         </p>
-        <p className="text-sm md:text-[0.9rem] font-medium md:text-center text-start w-full md:w-2/3">
-          To help startups and businesses bring their ideas to life through
-          high-quality software development, user-centered design, and practical
-          product strategy.
+        <p className="text-sm md:text-[0.9rem] font-medium md:text-center text-start w-full md:w-2/3 leading-6">
+          To deliver meaningful digital solutions for startups and businesses by leveraging high-quality software development, human-centered design, and strategic product planning that drives real results.
         </p>
       </motion.div>
     </div>

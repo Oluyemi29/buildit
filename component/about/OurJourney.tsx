@@ -26,7 +26,7 @@ const OurJourney = () => {
           </p>
         </div>
         <div className="hidden flex-col md:flex gap-4">
-          <p className="text-[0.8rem] md:text-[0.9rem] text-white md:w-1/2 md:mx-auto text-center font-medium">
+          <p className="text-[0.8rem] md:text-[0.9rem] text-white md:w-1/2 md:mx-auto text-center font-medium md:leading-7 leading-6">
             At BuilditLab, we’re more than a software company, we’re partners in
             innovation. Whether youre building your first MVP or scaling a
             fast-growing product, we’re here to bring your vision to life.
@@ -46,7 +46,7 @@ const OurJourney = () => {
         }}
         className="bg-transparent w-full py-12 px-2 md:px-5 flex flex-col justify-center items-center my-5 gap-12 bg-[radial-gradient(#cbd5e1_1.5px,transparent_1px)] bg-size-[25px_25px]"
       >
-        <h1 className="text-[#000000] text-[0.8rem] md:text-[1rem] font-semibold text-center  md:w-2/3">
+        <h1 className="text-[#000000] text-[0.8rem] md:text-[1rem] font-semibold text-center  md:w-2/3 md:leading-7 leading-6">
           “Every idea deserves a chance to become something real. Our mission at
           BuilditLab is to give founders the technology and support they need to
           make that happen.”
@@ -66,7 +66,7 @@ const OurJourney = () => {
         <h1 className="text-[1rem] md:text-2xl text-[#000000] font-bold">
           Go past progress metrics to understand genuine results
         </h1>
-        <p className="text-[0.8rem] md:text-[1rem] text-[#000000] font-medium">
+        <p className="text-[0.8rem] md:text-[1rem] text-[#000000] font-medium md:w-2/3 md:text-center md:leading-7 leading-6">
           Speed, clarity, and impact built into every step. We help startups go
           from idea to launch fast, with zero compromises on quality or creative
           vision.
