@@ -78,7 +78,7 @@ const WhyBuildIt = () => {
         ref={ref}
         initial="hidden"
         animate={controls}
-        className="w-full flex md:flex-row flex-col gap-5 justify-start items-start p-2 md:p-5 mt-5"
+        className="w-full flex md:flex-row flex-col gap-14 justify-start items-start px-2 md:px-5 py-14 "
       >
         <motion.div
           variants={childVariants}

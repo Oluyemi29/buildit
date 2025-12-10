@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Provider from "@/component/Provider";
 import Header from "@/component/header/Header";
 import Footer from "@/component/footer/footer";
+import { satoshi } from "@/config/localfont";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-inter",
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700", "800", "900"],
+//   variable: "--font-inter",
+// });
 
 export const metadata: Metadata = {
   title: {
@@ -41,8 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className={inter.className}>
+    <html lang="en" className={satoshi.className}>
+      <body className={satoshi.className}>
         <Provider>
           <Header />
           <div className="mt-14">{children}</div>

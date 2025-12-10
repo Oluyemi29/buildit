@@ -9,7 +9,7 @@ const Testimonial = () => {
         <h1 className="text-[#000000] font-bold text-lg md:text-2xl">
           What our client has to say
         </h1>
-        <p className="text-sm md:text-[1rem] hidden md:flex">
+        <p className="text-sm md:text-[1rem] font-medium hidden md:flex">
           Our clients say it best. Read their testimonials and see why they
           trust us
         </p>
@@ -59,8 +59,8 @@ const Testimonial = () => {
               </div>
             </div>
             <p className="text-[#000000] text-[0.8rem] md:font-medium font-semibold">
-              They transformed our idea into a fully functional product with
-              impressive attention to detail
+              They turned our concept into a fully functional product,
+              demonstrating exceptional attention to detail.
             </p>
             <div className="w-full flex flex-row justify-end">
               <Image

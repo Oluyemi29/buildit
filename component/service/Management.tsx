@@ -26,7 +26,7 @@ const Management = () => {
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           6. Product Management Support
         </h1>
-        <p className="text-[#000000] text-[0.8rem] md:text-[0.9rem] md:text-center md:w-2/3 w-full text-start">
+        <p className="text-[#000000] font-medium text-[0.8rem] md:text-[0.9rem] md:text-center md:w-2/3 w-full text-start">
           We help founders and companies bring order, structure, and clarity to
           their product development. From defining features to planning
           roadmaps, we ensure your product moves with direction and momentum.

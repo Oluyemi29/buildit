@@ -26,7 +26,7 @@ const MobileApp = () => {
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           2. Mobile Application Development
         </h1>
-        <p className="text-[#000000] text-[0.8rem] md:text-[0.9rem] md:text-center md:w-2/3 w-full text-start">
+        <p className="text-[#000000] text-[0.8rem] font-medium md:text-[0.9rem] md:text-center md:w-2/3 w-full text-start">
           We design and develop mobile apps that deliver seamless user
           experiences across iOS and Android. Whether you’re building for a
           global audience or an internal team, our mobile solutions are

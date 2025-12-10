@@ -26,7 +26,7 @@ const ProductDesign = () => {
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           4. Product Design (UI/UX)
         </h1>
-        <p className="text-[#000000] text-[0.8rem] md:text-[0.9rem] md:text-center md:w-2/3 w-full text-start">
+        <p className="text-[#000000] font-medium text-[0.8rem] md:text-[0.9rem] md:text-center md:w-2/3 w-full text-start">
           We design intuitive, beautiful, and user-centered digital experiences.
           Our design process blends creativity with strategy to ensure every
           product is functional, engaging, and aligned with business goals.

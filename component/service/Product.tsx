@@ -6,7 +6,7 @@ const Product = () => {
       <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
         End-to-End Product Development Services
       </h1>
-      <p className="text-[#000000] text-[0.8rem] md:text-[0.9rem] md:text-center md:w-3/4 text-start">
+      <p className="text-[#000000] text-[0.8rem] font-medium md:text-[0.9rem] md:text-center md:w-3/4 text-start">
         At BuildItLab, we combine product strategy, world-class design, and
         modern engineering to help you build reliable software, whether you’re
         launching a startup, transforming your business, or upgrading existing
