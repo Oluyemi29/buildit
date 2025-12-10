@@ -9,6 +9,7 @@ import { FaHotel } from "react-icons/fa6";
 import { FaNotesMedical } from "react-icons/fa";
 import { FaBuildingCircleCheck } from "react-icons/fa6";
 import { motion, Variants } from "framer-motion";
+import SolutionModal from "./SolutionModal";
 
 const Industries = () => {
   const animateds: Variants = {
@@ -55,12 +56,19 @@ const Industries = () => {
             We build user-friendly financial applications with strong security
             standards, seamless transactions, and beautiful interfaces.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="Savings & investment apps"
+            texttwo="Payment processing systems"
+            textthree="Wallet & card applications"
+            textfour="Lending and credit platforms"
+            textfive="KYC and onboarding systems"
+          />
         </motion.div>
 
         {/* E-Commerce & Retail  */}
@@ -81,12 +89,19 @@ const Industries = () => {
             store, we create smooth, conversion-driven experiences for your
             customers.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="E-commerce websites"
+            texttwo="Multi-vendor marketplaces"
+            textthree="Inventory management systems"
+            textfour="Order & delivery systems"
+            textfive="Customer loyalty platforms"
+          />
         </motion.div>
 
         {/* EdTech (Education Technology  */}
@@ -107,12 +122,19 @@ const Industries = () => {
             develop modern learning platforms that enhance teaching,
             collaboration, and course delivery.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="Online learning platforms"
+            texttwo="School management systems"
+            textthree="Course creation tools"
+            textfour="Live classroom & tutoring apps"
+            textfive="Certification & assessment systems"
+          />
         </motion.div>
 
         {/* Logistics & Transportation  */}
@@ -133,12 +155,19 @@ const Industries = () => {
             develop modern learning platforms that enhance teaching,
             collaboration, and course delivery.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="Delivery tracking systems"
+            texttwo="Fleet management tools"
+            textthree="Rider/driver apps"
+            textfour="Route optimization software"
+            textfive="Dispatch platforms"
+          />
         </motion.div>
 
         {/* Hospitality & Travel  */}
@@ -159,12 +188,19 @@ const Industries = () => {
             transform booking, management, and experience delivery for hotels,
             restaurants, and travel agencies.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="Property listing platforms"
+            texttwo="Virtual tour solutions"
+            textthree="Agent management dashboards"
+            textfour="Tenant & rent management systems"
+            // textfive="Dispatch platforms"
+          />
         </motion.div>
 
         {/* Startups (General Emerging Markets)  */}
@@ -185,12 +221,19 @@ const Industries = () => {
             startups validate ideas, build MVPs, and scale quickly without heavy
             overhead.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="MVP development"
+            texttwo="Prototype & UI/UX design"
+            textthree="Market-ready web/mobile apps"
+            textfour="Iteration & product improvement"
+            // textfive="Dispatch platforms"
+          />
         </motion.div>
 
         {/* Health Tech  */}
@@ -209,12 +252,19 @@ const Industries = () => {
             help healthcare brands go digital with smooth, user-centric tools
             built with data privacy in mind.
           </p>
-          <div className="flex flex-row items-center gap-2 underline underline-offset-2">
+          <div className="md:flex hidden flex-row items-center gap-2 underline underline-offset-2">
             <p className="text-[#000000] text-[0.8rem] font-semibold">
               Solution we build
             </p>
             <FaArrowRightLong className="text-end text-[#000000]" />
           </div>
+          <SolutionModal
+            textone="Patient management systems"
+            texttwo="Telemedicine apps"
+            textthree="Appointment booking platforms"
+            textfour="Health monitoring dashboards"
+            textfive="Wellness apps"
+          />
         </motion.div>
       </div>
     </div>

@@ -1,9 +1,11 @@
 "use client";
 
+import { Image } from "@heroui/react";
+
 const HeroSession = () => {
   return (
     <div
-      className="w-full h-120 bg-center bg-no-repeat bg-cover p-2 md:p-5 flex flex-col justify-center"
+      className="w-full py-20 bg-center bg-no-repeat bg-cover px-2 md:px-5 flex flex-col justify-center"
       style={{
         backgroundImage: "url('/hero-img.png')",
       }}
@@ -24,9 +26,26 @@ const HeroSession = () => {
             Trusted by:
           </p>
           {/* <Image src={"/opportuniverse.png"} alt="Opportuniverse" className="w-40 h-7" /> */}
-          <p className="text-sm md:text-lg font-semibold text-[#E3D8D8]">
-            Opportuniverse
-          </p>
+          <div className="flex flex-row justify-center gap-10 items-center">
+            <Image
+              src={"/opportuniverse.png"}
+              alt="Opportuniverse"
+              className="hover:scale-105 hover:opacity-50 transition-all duration-500 ease-in-out"
+              width={150}
+            />
+            <Image
+              src={"/think.png"}
+              alt="Thinkforce"
+              width={80}
+              className="hover:scale-105 hover:opacity-50 transition-all duration-500 ease-in-out"
+            />
+            <Image
+              src={"/pck-rm.png"}
+              alt="My Project"
+              width={120}
+              className="hover:scale-105 hover:opacity-50 transition-all duration-500 ease-in-out"
+            />
+          </div>
         </div>
       </div>
     </div>
