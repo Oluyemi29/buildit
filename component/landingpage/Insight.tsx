@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, Image } from "@heroui/react";
+import { Image } from "@heroui/react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Insight = () => {
@@ -17,36 +17,42 @@ const Insight = () => {
         </p>
       </div>
       <div className="w-full flex no-scrollbar overflow-x-auto">
-        <div className="flex flex-row my-3 gap-5">
+        <div className="flex flex-row my-3 md:gap-20 mx-auto gap-5 md:w-full">
           {/* blog  */}
-          <Card className="md:w-80 w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out p-3 hover:scale-105">
+          <div className="md:w-full w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out hover:scale-105 h-max bg-transparent">
             <Image
-              src={"/blog1.jpg"}
+              src={
+                "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf"
+              }
               width={"100%"}
               alt="Blog1"
-              className="w-full relative md:h-64 h-60 rounded-md"
+              className="w-full relative md:h-120 h-60 rounded-md"
             />
-            <div className="flex flex-col gap-5">
-              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">Blog</p>
-              <p className="text-[#000000] md:font-medium font-semibold text-sm">
+            <div className="flex flex-col gap-5 p-2">
+              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">
+                Blog
+              </p>
+              <p className="text-[#000000] md:font-medium font-medium text-sm">
                 ChatGPT Just Became a Shop: The Agentic Commerce Revolution
               </p>
               <div className="flex flex-row justify-end w-full">
                 <FaArrowRightLong className="text-end" />
               </div>
             </div>
-          </Card>
+          </div>
 
-          <Card className="md:w-80 w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out p-3 hover:scale-105">
+          <div className="md:w-full w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out hover:scale-105 md:mt-30">
             <Image
-              src={"/blog2.png"}
+              src={"https://images.unsplash.com/photo-1560179707-f14e90ef3623"}
               width={"100%"}
               alt="Game"
-              className="w-full relative md:h-64 h-60 rounded-md"
+              className="w-full relative md:h-120 h-60 rounded-md"
             />
-            <div className="flex flex-col gap-5">
-              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">Blog</p>
-              <p className="text-[#000000] md:font-medium font-semibold text-sm">
+            <div className="flex flex-col gap-5 p-2">
+              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">
+                Blog
+              </p>
+              <p className="text-[#000000] md:font-medium font-medium text-sm">
                 Scaling Microservices: Lessons Learnt from Netflix, Uber, Amazon
                 and Spotify
               </p>
@@ -54,48 +60,11 @@ const Insight = () => {
                 <FaArrowRightLong className="text-end" />
               </div>
             </div>
-          </Card>
-
-          <Card className="md:w-80 w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out p-3 hover:scale-105">
-            <Image
-              src={"/blog1.jpg"}
-              width={"100%"}
-              alt="Blog1"
-              className="w-full relative md:h-64 h-60 rounded-md"
-            />
-            <div className="flex flex-col gap-5">
-              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">Blog</p>
-              <p className="text-[#000000] md:font-medium font-semibold text-sm">
-                ChatGPT Just Became a Shop: The Agentic Commerce Revolution
-              </p>
-              <div className="flex flex-row justify-end w-full">
-                <FaArrowRightLong className="text-end" />
-              </div>
-            </div>
-          </Card>
-
-          <Card className="md:w-80 w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out p-3 hover:scale-105">
-            <Image
-              src={"/blog2.png"}
-              width={"100%"}
-              alt="Game"
-              className="w-full relative md:h-64 h-60 rounded-md"
-            />
-            <div className="flex flex-col gap-5">
-              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">Blog</p>
-              <p className="text-[#000000] md:font-medium font-semibold text-sm">
-                Scaling Microservices: Lessons Learnt from Netflix, Uber, Amazon
-                and Spotify
-              </p>
-              <div className="flex flex-row justify-end w-full">
-                <FaArrowRightLong className="text-end" />
-              </div>
-            </div>
-          </Card>
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-row my-5 justify-start md:justify-center items-center gap-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer">
+      <div className="flex flex-row my-10 justify-start md:justify-center items-center gap-2 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer">
         <p className="font-bold md:font-medium text-sm text-[#000000] underline underline-offset-2">
           More valuable insights
         </p>
