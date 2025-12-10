@@ -25,7 +25,11 @@ const HeroSession = () => {
             </p>
           </div>
           <div className="flex flex-col justify-start gap-5">
-            <Button as={Link} href="/contact" className="text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] w-max hover:scale-105 transition-all duration-500 ease-in-out">
+            <Button
+              as={Link}
+              href="/contact"
+              className="text-[#CCCCCC] bg-[#021645] border-1 border-[#CCCCCC] w-max hover:scale-105 transition-all duration-500 ease-in-out"
+            >
               Start a project
               <FaArrowRightLong className="text-white" />
             </Button>
@@ -33,25 +37,23 @@ const HeroSession = () => {
         </div>
       </div>
       <div className="bg-[#F2F5F7] w-full h-auto flex flex-col  items-center">
-        
-
-        <div className="w-full md:hidden flex md:flex-row md:justify-center py-12 flex-col gap-5">
-          <div className="w-full flex flex-row md:justify-end justify-start">
+        <div className="md:hidden flex justify-center items-center py-12 flex-col gap-5">
+          <div className="w-full flex flex-row justify-start">
             <Image
               src={"/about1.jpg"}
               alt="About1"
               width={"100%"}
               height={"100%"}
-              className="md:w-full w-60 h-40"
+              className="md:w-full w-[65%] h-40"
             />
           </div>
-          <div className="w-full flex flex-row md:justify-start justify-end">
+          <div className="w-full flex flex-row">
             <Image
               src={"/about2.jpg"}
               alt="About1"
               width={"100%"}
               height={"100%"}
-              className="md:w-full w-60 h-40 items-end"
+              className="md:w-full w-[65%] h-40 ml-auto"
             />
           </div>
         </div>
