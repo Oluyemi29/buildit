@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Insight = () => {
   return (
-    <div className="w-full md:p-5 p-2">
+    <div className="w-full flex flex-col gap-5 my-10 px-2">
       <div className="my-10 flex flex-col md:items-center items-start gap-5">
         <h1 className="text-[#000000] text-lg md:text-2xl font-bold">
           Explore insights for acceleration
@@ -16,49 +16,51 @@ const Insight = () => {
           operation and drive business results
         </p>
       </div>
-      <div className="w-full flex no-scrollbar overflow-x-auto">
-        <div className="flex flex-row my-3 md:gap-20 mx-auto gap-5 md:w-full">
-          {/* blog  */}
-          <div className="md:w-full w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out hover:scale-105 h-max bg-transparent">
+      <div className="overflow-x-auto no-scrollbar flex py-4">
+        <div className="flex flex-row mx-auto md:grid md:grid-cols-2 md:gap-20 gap-5">
+          {/* game  */}
+          <div className="md:w-full w-60 flex flex-col gap-5">
             <Image
               src={
                 "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf"
               }
               width={"100%"}
-              alt="Blog1"
-              className="w-full relative md:h-120 h-60 rounded-md"
+              alt="Game"
+              className="w-full relative md:h-110 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
             />
-            <div className="flex flex-col gap-5 p-2">
-              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">
-                Blog
+            <div className="w-full flex flex-row justify-between items-center">
+              <h1 className="text-[#000000] font-bold text-[0.8rem]">Blog</h1>
+            </div>
+            <div className="flex flex-col gap-5 mt-3">
+              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
+                ChatGPT Just Became a Shop
+              </h1>
+              <p className="text-[#6D6D6D] line-clamp-1 text-[0.8rem] md:text-[0.9rem]">
+                ChatGPT just introduced a new Shop where users can explore,
+                create, and distribute custom <br /> AI assistants.
               </p>
-              <p className="text-[#000000] md:font-medium font-medium text-sm">
-                ChatGPT Just Became a Shop: The Agentic Commerce Revolution
-              </p>
-              <div className="flex flex-row justify-end w-full">
-                <FaArrowRightLong className="text-end" />
-              </div>
             </div>
           </div>
 
-          <div className="md:w-full w-60 flex flex-col gap-5 transition-all duration-500 ease-in-out hover:scale-105 md:mt-30">
+          {/* sketck  */}
+          <div className="md:w-full w-60 md:mt-28 flex flex-col gap-5">
             <Image
               src={"https://images.unsplash.com/photo-1560179707-f14e90ef3623"}
               width={"100%"}
               alt="Game"
-              className="w-full relative md:h-120 h-60 rounded-md"
+              className="w-full md:h-110 h-48 rounded-md hover:scale-105 transition-all duration-500 ease-in-out"
             />
-            <div className="flex flex-col gap-5 p-2">
-              <p className="text-[#000000] font-semibold text-[0.8rem] md:text-[0.9rem]">
-                Blog
+            <div className="w-full flex flex-row justify-between items-center">
+              <h1 className="text-[#000000] font-bold text-[0.8rem]">Blog</h1>
+            </div>
+            <div className="flex flex-col gap-5 mt-3">
+              <h1 className="text-[#000000] text-sm font-semibold md:text-xl hover:underline underline-offset-4">
+                Scaling microservices
+              </h1>
+              <p className="text-[#6D6D6D] line-clamp-1 text-[0.8rem] md:text-[0.9rem]">
+                Scaling microservices ensures each service grows independently
+                to meet demand without <br /> impacting the rest of the system.
               </p>
-              <p className="text-[#000000] md:font-medium font-medium text-sm">
-                Scaling Microservices: Lessons Learnt from Netflix, Uber, Amazon
-                and Spotify
-              </p>
-              <div className="flex flex-row justify-end w-full">
-                <FaArrowRightLong className="text-end" />
-              </div>
             </div>
           </div>
         </div>

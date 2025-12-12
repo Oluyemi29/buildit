@@ -3,6 +3,7 @@ import { HiLightBulb } from "react-icons/hi";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { Card } from "@heroui/react";
+import LeverageAnimate from "./LeverageAnimate";
 
 const Expertise = () => {
   const ref = useRef(null);
@@ -47,7 +48,7 @@ const Expertise = () => {
           team, or a full product build, we’re your partner from concept to
           launch.
         </p>
-        <div className="w-full flex overflow-x-scroll no-scrollbar py-5">
+        <div className="w-full flex md:hidden overflow-x-scroll no-scrollbar py-5">
           <div className="flex flex-row gap-5 px-3 py-1">
             {/* ideation  */}
             <Card className="flex bg-transparent p-5 flex-row items-center md:w-96 w-80 md:gap-7 gap-6">
@@ -143,6 +144,8 @@ const Expertise = () => {
             </Card>
           </div>
         </div>
+
+        <LeverageAnimate />
       </div>
 
       <div className="p-2 md:p-5 mt-6 w-full flex flex-col gap-10 md:gap-6 md:items-center items-start">
