@@ -27,7 +27,7 @@ const Industries = () => {
     },
   };
   return (
-    <div className="bg-[radial-gradient(#cbd5e1_1.5px,transparent_1px)] bg-size-[25px_25px] py-12 px-2 md:px-5">
+    <div className="py-12 px-2 md:px-5">
       <div className="w-full md:w-2/3 md:mx-auto flex flex-col  md:gap-7 gap-12 md:items-center items-start">
         <h1 className="text-[#000000] text-[1rem] md:text-2xl font-bold">
           Integrated design-to-delivery product development

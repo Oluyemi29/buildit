@@ -21,7 +21,7 @@ const page = () => {
   return (
     <div>
       <HeroSession />
-      <div className="bg-[radial-gradient(#cbd5e1_1.5px,transparent_1px)] bg-size-[25px_25px]">
+      <div className="">
         <Product />
         <WebApp />
         <MobileApp />

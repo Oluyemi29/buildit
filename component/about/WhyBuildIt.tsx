@@ -35,7 +35,7 @@ const WhyBuildIt = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
   return (
-    <div className="bg-[radial-gradient(#cbd5e1_1.5px,transparent_1px)] bg-size-[25px_25px]">
+    <div className="">
       <div className=" flex flex-col items-center px-2 py-10 md:px-5 gap-5 bg-linear-to-br from-indigo-100 via-white to-purple-100">
         <h1 className="text-[#021645] text-[1rem] md:text-2xl font-semibold">
           Why BuilditLab?

@@ -44,7 +44,7 @@ const OurJourney = () => {
             duration: 1,
           },
         }}
-        className="bg-transparent w-full py-12 px-2 md:px-5 flex flex-col justify-center items-center my-5 gap-12 bg-[radial-gradient(#cbd5e1_1.5px,transparent_1px)] bg-size-[25px_25px]"
+        className="bg-transparent w-full py-12 px-2 md:px-5 flex flex-col justify-center items-center my-5 gap-12"
       >
         <h1 className="text-[#000000] text-[0.8rem] md:text-[1rem] font-semibold text-center  md:w-2/3 md:leading-7 leading-6">
           “Every idea deserves a chance to become something real. Our mission at

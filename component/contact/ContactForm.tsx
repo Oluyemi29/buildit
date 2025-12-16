@@ -67,7 +67,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="bg-[radial-gradient(#cbd5e1_1.5px,transparent_1px)] bg-size-[25px_25px] w-full flex md:flex-row flex-col items-center gap-5 p-5">
+    <div className="w-full flex md:flex-row flex-col items-center gap-5 p-5">
       <div className="w-full flex flex-col justify-center items-center">
         <Image
           src={"/contact-us.png"}
